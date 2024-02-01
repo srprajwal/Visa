@@ -1,5 +1,4 @@
 ViSA: Visualization of Sorting Algorithms
-https://shortingalgorithmvisualizer.000webhostapp.com/
 
 Prajwal S R
 Dept. of Computer Science R N S Institute of Technology
