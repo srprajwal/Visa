@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALGORITHM VISUALIZER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+       function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+ /*Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+    </script>
+</head>
+<body>
+
+    <header>
+        <span onclick="openNav()" class="home"><i class="fa fa-home"></i>SORT VISUALIZER</span>
+        </header>
+    <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">QUADRATIC</a>
+            <ol>
+            <a href="bubblesort.html">Bubble Sort</a>
+            <a href="selectinosort.html">Selection Sort</a>
+            <a href="insertionsort.html">Insertion Sort</a></ol>
+           <a href="#"> LOGARITHMIC</a>
+            <ol>
+            <a href="quicksort.html">Quick Sort</a>
+            <a href="mergesort.html">Merge Sort</a>
+            <a href="heapsort.html">Heap Sort</a>
+            </ol>
+        </div>
+    <div id="main">
+        <div class="container">
+            <img src="image/sorting.jpg" alt="Snow" style="width:100%;">
+            <div class="centered"><h1>SORTING ALGORITHM VISUALIZER</h1></div>
+          </div>
+
+          <!-- cover page text -->
+        <div id="cover">
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: xx-large;">Sorting Algorithms</h3>
+            <div id="text">
+                <p>A sorting algorithm is a method for reorganizing a large number of items into a specific order, such as alphabetical, highest-to-lowest value or shortest-to-longest distance. Sorting algorithms take lists of items as input data, perform specific operations on those lists and deliver ordered arrays as output. The many applications of sorting algorithms include organizing items by price on a retail website and determining the order of sites on a search engine results page (SERP).</p>
+
+                <p>This operation is one of the most important and widespread in computer science. For a long time, new methods have been developed to make this procedure faster and faster.</p>
+
+                <p>There are currently hundreds of different sorting algorithms, each with its own specific characteristics.</p> 
+                <p>They are classified according to two metrics: <br></p>
+                <ul>
+                  <li>Space Complexity.</li>
+                  <br>
+                  <li>Time Complexity.</li>
+                </ul>
+
+                <p>Those two kinds of complexity are represented with <u style="color: orange;">asymptotic notations</u>, mainly with the symbols <b style="color: orange;"> O, Θ, Ω, </b> respectively the upper bound, the tight bound, and the lower bound of the algorithm's complexity, specifying in brackets an expression in terms of n, the number of the elements of the data structure.</p>
+                
+                
+               <p> Most of them fall into two categories:</p>
+                <ul>
+                <li>Logarithmic</li>
+                <p>The complexity is proportional to the binary logarithm (i.e to the base 2) of n.</p>
+                <p>An example of a logarithmic sorting algorithm is Quick sort, with space and time complexity O(n × log n).</p>
+
+               <li>Quadratic</li>
+                <p>The complexity is proportional to the square of n.</p>
+                <p>An example of a quadratic sorting algorithm is Bubble sort, with a time complexity of O(n2).</p>
+                </ul>
+                
+                <p>Space and time complexity can also be further subdivided into 3 different cases: best case, average case and worst case.</p>
+
+                <p >algorithms can be difficult to understand and it's easy to get confused. We believe visualizing sorting algorithms can be a great way to better understand their functioning while having fun!</p>
+                <p>A few examples of sorting algorithms:</p>
+                <ul>
+                <li>The bubble sort algorithm repeatedly proceeds through the list, comparing pairs of adjacent items and exchanging their positions if they are in the wrong order. The algorithm passes through the list in that way until the entire list has been sorted.</li><br>
+                <li>The insertion sort algorithm starts by putting the first two items in order and then compares the third item with the second one, swapping positions if necessary and repeats that action with the first item. Subsequent items subjected to the same process often don't have to be moved far through the sorted items.</li>
+                <li>The Shell sort algorithm compares and sorts items at intervals, decreasing the size of the interval at each pass through the list. The final passes through are a bubble sort but it's much faster because items are already closer to their desired positions.</li><br>
+                <li>The quicksort algorithm selects a random item in the list, compares all the other items to it and organizes them into those that belong before the selected item and those that belong after it. That means that none of the items have to be compared with those in the other group again. The method proceeds by selecting random items within those two groups of items and repeating the process. Eventually, some other method such as the insertion algorithm does the final sorting.</li>
+                </ul>
+             </div>
+        </div>
+        <br><br><br><br> <br>
+        <div class="button">
+        <span onclick="openNav()"><button >SORT</button></span>
+        </div>
+        <br><br><br><br><br>
+          <footer>
+            <b class="lasthead">SORT VISUALIZER:</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <b class="lasthead">CONTACT:</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <b class="lasthead">REFERENCE:</b><br><br>
+            <b class="last">NithishKumar S R</b>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="#" class="last">nithish@gmail.com</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="https://www.google.co.in/url?sa=i&rct=j&q=&esrc=s&source=web&cd=&ved=0CDkQw7AJahcKEwigr8Gxi96AAxUAAAAAHQAAAAAQAg&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSorting_algorithm&psig=AOvVaw0jT1cwR92UXIfIljXZMHBV&ust=1692169123762388&opi=89978449" class="last">Wikipedia</a><br><br>
+            <b class="last">Prajwal S R</b>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="#" class="last">prajwal@gmail.com</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwimzpvHi96AAxUkcGwGHRscCT8QFnoECA0QAQ&url=https%3A%2F%2Fwww.geeksforgeeks.org%2Fsorting-algorithms%2F&usg=AOvVaw1TxZ01MdWgx72FdWekzdzg&opi=89978449" class="last">GeeksforGeeks</a><br>
+        </footer>
+    </div>
+</body>
+</html>

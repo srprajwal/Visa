@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MergeSort</title>
+    <link rel="stylesheet" href="css/bubbleCss.css">
+
+    <script>
+        function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+ /*Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+
+    </script>
+</head>
+<body>
+     <header>
+        <span onclick="openNav()" class="home"><i class="fa fa-home"></i>SORT VISUALIZER</span>
+        </header>
+    <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">QUADRATIC</a>
+            <ol>
+            <a href="bubblesort.html">Bubble Sort</a>
+            <a href="selectinosort.html">Selection Sort</a>
+            <a href="insertionsort.html">Insertion Sort</a></ol>
+           <a href="#"> LOGARITHMIC</a>
+            <ol>
+            <a href="quicksort.html">Quick Sort</a>
+            <a href="mergesort.html">Merge Sort</a>
+            <a href="heapsort.html">Heap Sort</a>
+            </ol>
+        </div>
+    <div id="main">
+        <b class="bubble">MergeSort</b><br><hr>
+        <div class="head1" >
+          <p>Size-of-Array</p>
+          <input type="range" id="a_size" min="20"  max="100" step="1">
+          <p>Speed-of-Algorithm</p>
+          <input type="range" id="a_speed" min="1" max="5" step="1"><br><br>
+          <button id="a_create">Create New Array !!</button><br>
+          <div class="head3">
+           <br> <button>MERGE SORT</button>
+          </div>
+      </div>
+      </div>
+        </div>
+      
+        <section>
+          <div class="content1">
+          </div>
+      
+          <div id="container2">
+      
+          </div>
+          </section><hr>
+        </div>
+        <div id="cover">
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: xx-large; color: orange;">
+            DESCRIPTION</h3>
+            <p>Merge sort is defined as a sorting algorithm that works by dividing an array into smaller subarrays, sorting each subarray, and then merging the sorted subarrays back together to form the final sorted array.</p>
+            <p style="color: orange;">How does Merge Sort work?</p>
+            <p>Merge sort is a recursive algorithm that continuously splits the array in half until it cannot be further divided i.e., the array has only one element left (an array with one element is always sorted). Then the sorted subarrays are merged into one sorted array.</p>
+            <p>Divide the unsorted list into n sublists, each containing one element (a list of one element is considered sorted).</p>
+            <p>Repeatedly merge sublists to produce new sorted sublists until there is only one sublist remaining. This will be the sorted list.</p>
+                <table>
+                  <tr>
+                    <td>Average Complexity</td>
+                    <td>O(nlogn)</td>
+                  </tr>
+                  <tr>
+                    <td>Best Case</td>
+                    <td>O(nlogn)</td>
+                  </tr>
+                  <tr>
+                    <td>Worst Case</td>
+                    <td>O(nlogn)</td>
+                  </tr>
+                  <tr>
+                    <td>Space Complexity</td>
+                    <td>O(n)</td>
+                  </tr>
+                </table>
+                <p style="color: orange;">Advantages of Merge Sort:</p>
+                <ul>
+                    <li>It can be applied to files of any size.</li>
+                    <li>Reading of the input during the run-creation step is sequential ==> Not much seeking.</li>
+                    <li>If heap sort is used for the in-memory part of the merge, its operation can be overlapped with I/O</li>
+                </ul>
+                <p style="color: orange;">Disadvantages of Merge Sort:</p>
+                <ul>
+                    <li>Requires extra space »N</li>
+                    <li>Merge Sort requires more space than other sort.</li>
+                    <li>Merge sort is less efficient than other sort</li>
+                </ul>
+            </div><br><br>
+        <hr> 
+        <div>
+          <footer>
+            <b class="lasthead">SORT VISUALIZER:</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <b class="lasthead">CONTACT:</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <b class="lasthead">REFERENCE:</b><br><br>
+            <b class="last">NithishKumar S R</b>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="#" class="last">nithish@gmail.com</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="https://www.google.co.in/url?sa=i&rct=j&q=&esrc=s&source=web&cd=&ved=0CDkQw7AJahcKEwigr8Gxi96AAxUAAAAAHQAAAAAQAg&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSorting_algorithm&psig=AOvVaw0jT1cwR92UXIfIljXZMHBV&ust=1692169123762388&opi=89978449" class="last">Wikipedia</a><br><br>
+            <b class="last">Prajwal S R</b>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="#" class="last">prajwal@gmail.com</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwimzpvHi96AAxUkcGwGHRscCT8QFnoECA0QAQ&url=https%3A%2F%2Fwww.geeksforgeeks.org%2Fsorting-algorithms%2F&usg=AOvVaw1TxZ01MdWgx72FdWekzdzg&opi=89978449" class="last">GeeksforGeeks</a><br>
+          </div>
+        </footer>
+    </div>
+          <script src="javascript/merge_sort.js"></script>
+          <script src="javascript/First.js"></script>
+          <script src="javascript/Second.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>QuickSort</title>
+    <link rel="stylesheet" href="css/bubbleCss.css">
+
+    <script>
+        function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+ /*Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+
+    </script>
+</head>
+<body>
+     <header>
+        <span onclick="openNav()" class="home"><i class="fa fa-home"></i>SORT VISUALIZER</span>
+        </header>
+    <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">QUADRATIC</a>
+            <ol>
+            <a href="bubblesort.html">Bubble Sort</a>
+            <a href="selectinosort.html">Selection Sort</a>
+            <a href="insertionsort.html">Insertion Sort</a></ol>
+           <a href="#"> LOGARITHMIC</a>
+            <ol>
+            <a href="quicksort.html">Quick Sort</a>
+            <a href="mergesort.html">Merge Sort</a>
+            <a href="heapsort.html">Heap Sort</a>
+            </ol>
+        </div>
+    <div id="main">
+        <b class="bubble">QuickSort</b><br><hr>
+        <div class="head1" >
+          <p>Size-of-Array</p>
+          <input type="range" id="a_size" min="20"  max="100" step="1">
+          <p>Speed-of-Algorithm</p>
+          <input type="range" id="a_speed" min="1" max="5" step="1"><br><br>
+          <button id="a_create">Create New Array !!</button><br>
+          <div class="head3">
+           <br> <button>QUICK SORT</button>
+          </div>
+      </div>
+      </div>
+        </div>
+      
+        <section>
+          <div class="content1">
+          </div>
+      
+          <div id="container2">
+      
+          </div>
+          </section><hr>
+        </div>
+        <div id="cover">
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: xx-large; color: orange;">
+            DESCRIPTION</h3>
+                      
+             <p>QuickSort is a sorting algorithm based on the Divide and Conquer algorithm that picks an element as a pivot and partitions the given array around the picked pivot by placing the pivot in its correct position in the sorted array.</p>
+             <p>Quicksort is a divide-and-conquer algorithm. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot.</p>
+
+                <table>
+                  <tr>
+                    <td>Average Complexity</td>
+                    <td>O(nlogn)</td>
+                  </tr>
+                  <tr>
+                    <td>Best Case</td>
+                    <td>O(nlogn)</td>
+                  </tr>
+                  <tr>
+                    <td>Worst Case</td>
+                    <td>O(n<sup>2</sup>)</td>
+                  </tr>
+                  <tr>
+                    <td>Space Complexity</td>
+                    <td>O(n)</td>
+                  </tr>
+                </table>
+                <p style="color: orange;">Advantages of Quick Sort:</p>
+                <ul>
+                    <li>The quick sort is regarded as the best sorting algorithm.</li>
+                    <li>It is able to deal well with a huge list of items.</li>
+                    <li>Because it sorts in place, no additional storage is required as well</li>
+                </ul>
+                <p style="color: orange;">Disadvantages of Quick Sort:</p>
+                <ul>
+                    <li>The slight disadvantage of quick sort is that its worst-case performance is similar to average performances of the bubble, insertion or selections sorts.</li>
+                    <li>If the list is already sorted than bubble sort is much more efficient than quick sort</li>
+                    <li>If the sorting element is integers than radix sort is more efficient than quick sort.</li>
+                </ul>
+            </div><br><br>
+        <hr> 
+        <div>
+          <footer>
+            <b class="lasthead">SORT VISUALIZER:</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <b class="lasthead">CONTACT:</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <b class="lasthead">REFERENCE:</b><br><br>
+            <b class="last">NithishKumar S R</b>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="#" class="last">nithish@gmail.com</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="https://www.google.co.in/url?sa=i&rct=j&q=&esrc=s&source=web&cd=&ved=0CDkQw7AJahcKEwigr8Gxi96AAxUAAAAAHQAAAAAQAg&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSorting_algorithm&psig=AOvVaw0jT1cwR92UXIfIljXZMHBV&ust=1692169123762388&opi=89978449" class="last">Wikipedia</a><br><br>
+            <b class="last">Prajwal S R</b>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="#" class="last">prajwal@gmail.com</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwimzpvHi96AAxUkcGwGHRscCT8QFnoECA0QAQ&url=https%3A%2F%2Fwww.geeksforgeeks.org%2Fsorting-algorithms%2F&usg=AOvVaw1TxZ01MdWgx72FdWekzdzg&opi=89978449" class="last">GeeksforGeeks</a><br>
+          </div>
+        </footer>
+    </div>
+          <script src="javascript/quick_sort.js"></script>
+          <script src="javascript/First.js"></script>
+          <script src="javascript/Second.js"></script>
+</body>
+</html>
