@@ -1,6 +1,6 @@
 ViSA: Visualization of Sorting Algorithms
 
-visualizationofshortingalgorithms.netlify.app
+[visualizationofshortingalgorithms.netlify.app](https://visualizationofshortingalgorithms.netlify.app)
 
 Prajwal S R
 Dept. of Computer Science R N S Institute of Technology
